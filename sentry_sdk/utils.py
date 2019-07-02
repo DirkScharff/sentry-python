@@ -658,7 +658,7 @@ def _module_in_set(name, set):
     return False
 
 
-def strip_string(value, max_length=512):
+def strip_string(value, max_length=MAX_STRING_LENGTH):
     # type: (str, int) -> Union[AnnotatedValue, str]
     # TODO: read max_length from config
     if not value:
